@@ -30,11 +30,11 @@
 #    print("Good name")
 
 yourWeight = float(input("Your weight: "))
-LBSorKG = input("LBS or KG, please type L/l for Lbs or K/k for Kg: ")
-if LBSorKG == "k" or LBSorKG == "K":
+unit = input("LBS or KG, please type L/l for Lbs or K/k for Kg: ")
+if unit == "k" or unit == "K":
         toLbs = yourWeight * 2.20462
         print("Your weight in pounds is: ", str(round(toLbs, 2)), "lbs")
-elif LBSorKG == "l" or LBSorKG == "L":
+elif unit == "l" or unit == "L":
         toKg = yourWeight * 0.453592
         print("Your weight in kilogramms is: ", str(round(toKg, 2)), "kg")
 else:
