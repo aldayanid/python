@@ -1,8 +1,9 @@
 multiplier=10
-yAxis=1
-while (yAxis<=multiplier):
-    print("*"*yAxis)
-    yAxis=yAxis+1
+start=1
+while (start<=multiplier):
+    print("*  "*start)
+    start=start+1
+
 # multiplier=10
 # for y in range(multiplier):
 #     for x in range(multiplier):
