@@ -1,11 +1,20 @@
-multiplier=10
-start=1
-while (start<=multiplier):
-    print("*  "*start)
-    start=start+1
+# multiplier = 10
+# start = 1
+##my version
+# while (start <= multiplier):
+#     print("*  " * start)
+#     start += 1
 
-# multiplier=10
-# for y in range(multiplier):
-#     for x in range(multiplier):
-#         print('*' if y+x >= multiplier-1 else ' ', end='')
+#rows = int(input("Input rows number: "))
+###from right to left
+# for y in range(rows):
+#     for x in range(rows):
+#         print('*' if y+x > rows - 2 else ' ', end='')
 #     print()
+
+###from left to right
+rows = 10
+for y in range(rows):
+    for x in range(rows):
+        print(" " if y>x else "*", end='')
+    print()
