@@ -6,6 +6,10 @@ attempts = 1
 
 while True:
     attempts += 1
+    if  attempts == 3:
+        print("max number of attempts reached.")
+        break
+
     if i > n:
         print("Enter lesser")
     elif i < n:
@@ -14,9 +18,5 @@ while True:
         print("Bingo")
         break
     i = int(input("Please enter your number: "))
-
-    if  attempts == 3:
-        print("max number of attempts reached.")
-        break
 
 print("The end!")
